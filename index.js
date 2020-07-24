@@ -24,6 +24,7 @@ const app = express();
 
 // Bring in models
 let Article = require('./models/articles');
+let User = require('./models/user')
 
 // Set up the template engine
 app.set('views', path.join(__dirname, 'views'));
@@ -73,7 +74,10 @@ app.get("/", (req, res) => {
 
 // Route files
 let articles = require('./routes/articles.js') ;
+let users = require('./routes/users.js') ;
 app.use('/articles', articles);
+app.use('/users', users);
+
 
 const PORT = 1000;
 

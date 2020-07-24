@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-// Bring in models
+// Bring in Article model
 let Article = require('../models/articles');
 
 
@@ -49,7 +49,7 @@ router.post('/edit/:id', (req, res) => {
 
     let query = { _id: req.params.id }
 
-    Article.update(query, article, (err) => {
+    Article.updateOne(query, article, (err) => {
         if (err) {
             console.log(err);
             return;
