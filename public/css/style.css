@@ -5,3 +5,16 @@ a{
     color: white;
     padding: 5px;
 }
+.edit{
+    color: black;
+}
+.alert-error{
+    color: white;
+    background-color: rgb(153, 87, 87);
+    border: 1px solid red;
+}
+.alert-success_msg{
+    color: white;
+    background-color: rgb(86, 112, 86);
+    border: 1px solid green;
+}
