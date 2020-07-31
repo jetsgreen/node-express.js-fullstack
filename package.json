@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/jetsgreen/node-express.js-fullstack/issues"
   },
-  "homepage": "https://github.com/jetsgreen/node-express.js-fullstack#readme",
+  "homepage": "https://github.com/jetsgreen/node-express.js-fullstack",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",

@@ -90,7 +90,8 @@ app.use('/articles', articles);
 app.use('/users', users);
 
 
-const PORT = 1000;
+
+const PORT = proscess.env.PORT || 1000;
 
 // Start Server
 app.listen(1000, () => {

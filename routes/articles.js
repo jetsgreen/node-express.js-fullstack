@@ -47,6 +47,7 @@ router.post('/edit/:id', (req, res) => {
     article.title = req.body.title;
     article.author = req.user._id;
     article.body = req.body.body;
+    
 
     let query = { _id: req.params.id }
 
